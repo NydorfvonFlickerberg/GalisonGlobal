@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galison Global Ltd. | Renewable Energy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#0F172A] font-sans antialiased flex flex-col min-h-screen">
+
+    <header class="w-full z-50 px-6 py-6 md:px-24 flex flex-col md:flex-row justify-between items-center bg-white border-b border-slate-200 text-slate-900 shadow-sm">
+        <div class="mb-6 md:mb-0 text-center md:text-left">
+            <div class="font-display font-bold text-2xl tracking-tight text-slate-900">Galison Global Ltd.</div>
+            <div class="text-[10px] md:text-xs text-slate-500 font-light mt-1 tracking-wider uppercase max-w-xs md:max-w-none">
+                a Bulgarian private company with Swedish management, since 2013.
+            </div>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm font-medium uppercase tracking-widest text-slate-600">
+            <a href="index.html" class="hover:text-[#10B981] transition-colors">About</a>
+            <a href="services.html" class="hover:text-[#10B981] transition-colors">Services</a>
+            <a href="projects.html" class="hover:text-[#10B981] transition-colors">Projects</a>
+            <a href="contact.html" class="text-[#10B981] transition-colors">Contact</a>
+        </nav>
+    </header>
+
+    <section class="relative h-[70vh] min-h-[450px] flex items-center px-6 md:px-24 bg-slate-900">
+        <img 
+            src="assets/field.jpg" 
+            class="absolute inset-0 w-full h-full object-cover opacity-50" 
+            alt="Renewable Energy Landscape" 
+        />
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                Power Up <br/> with Renewables
+            </h1>
+        </div>
+    </section>
+
+    <section class="pt-16 pb-24 px-6 md:px-24 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto">
+            
+            <h2 class="font-display text-4xl font-bold mb-8 text-slate-900">About us</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                
+                <div class="space-y-6 text-slate-600 text-lg md:text-xl font-light leading-relaxed">
+                    <p>
+                        On behalf of our international clients, we are identifying and securing viable utility-scale renewable energy project opportunities in Southeastern Europe across a range of asset classes (ground-mounted solar PV, wind, battery energy storage systems, and hydrogen).
+                    </p>
+                    <p>
+                        In collaboration with local partners, we can also support international investors in developing renewable energy projects, from site identification to fully operational status.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 md:gap-6">
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 font-display font-bold text-lg flex items-center justify-center text-center text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#10B981]/15 hover:border-[#10B981] hover:text-[#10B981] cursor-pointer">
+                        Solar PV
+                    </div>
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 font-display font-bold text-lg flex items-center justify-center text-center text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#10B981]/15 hover:border-[#10B981] hover:text-[#10B981] cursor-pointer">
+                        Onshore Wind
+                    </div>
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 font-display font-bold text-lg flex items-center justify-center text-center text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#10B981]/15 hover:border-[#10B981] hover:text-[#10B981] cursor-pointer">
+                        BESS
+                    </div>
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 font-display font-bold text-lg flex items-center justify-center text-center text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#10B981]/15 hover:border-[#10B981] hover:text-[#10B981] cursor-pointer">
+                        Green Hydrogen
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="shrink-0 border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-24 py-10">
+            <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <div class="font-display font-bold text-lg tracking-tight text-slate-900">Galison Global Ltd.</div>
+                    <div class="mt-2 text-sm text-slate-600 font-light">
+                        <a href="mailto:johan.elisson@galison-global.com" class="hover:text-[#10B981] transition-colors underline decoration-slate-200 underline-offset-4 hover:decoration-[#10B981]">
+                            johan.elisson@galison-global.com
+                        </a>
+                        <span class="text-slate-300 px-2" aria-hidden="true">|</span>
+                        Varna, Bulgaria
+                    </div>
+                </div>
+
+                <nav class="flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium uppercase tracking-widest text-slate-600">
+                    <a href="index.html" class="hover:text-[#10B981] transition-colors">About</a>
+                    <a href="services.html" class="hover:text-[#10B981] transition-colors">Services</a>
+                    <a href="projects.html" class="hover:text-[#10B981] transition-colors">Projects</a>
+                    <a href="contact.html" class="hover:text-[#10B981] transition-colors">Contact</a>
+                </nav>
+            </div>
+
+            <div class="mt-8 text-xs text-slate-400 font-light">
+                © <span id="year"></span> Galison Global Ltd. All rights reserved.
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+</html>

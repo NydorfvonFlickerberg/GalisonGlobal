@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Galison Global Ltd.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-[#0F172A] font-sans antialiased flex flex-col min-h-screen">
+
+    <header class="w-full z-50 px-6 py-6 md:px-12 xl:px-24 flex flex-col md:flex-row justify-between items-center bg-white border-b border-slate-200 text-slate-900 shadow-sm shrink-0">
+        <div class="mb-6 md:mb-0 text-center md:text-left">
+            <div class="font-display font-bold text-2xl tracking-tight text-slate-900">Galison Global Ltd.</div>
+            <div class="text-[10px] md:text-xs text-slate-500 font-light mt-1 tracking-wider uppercase max-w-xs md:max-w-none">
+                a Bulgarian private company with Swedish management, since 2013.
+            </div>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm font-medium uppercase tracking-widest text-slate-600">
+            <a href="index.html" class="hover:text-[#10B981] transition-colors">About</a>
+            <a href="services.html" class="hover:text-[#10B981] transition-colors">Services</a>
+            <a href="projects.html" class="hover:text-[#10B981] transition-colors">Projects</a>
+            <a href="contact.html" class="text-[#10B981] transition-colors">Contact</a>
+        </nav>
+    </header>
+
+    <div class="flex flex-col lg:flex-row flex-grow">
+        
+        <div class="lg:w-1/2 relative min-h-[40vh] lg:min-h-full">
+            <img 
+                src="assets/vert.jfif" 
+                class="absolute inset-0 w-full h-full object-cover" 
+                alt="Solar infrastructure" 
+            />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/20 to-transparent"></div>
+        </div>
+
+        <div class="lg:w-1/2 bg-slate-50 flex items-center justify-center p-8 md:p-16 lg:px-24 flex-col">
+            
+            <div class="max-w-2xl w-full flex flex-col lg:items-center">
+                
+                <h1 class="font-display text-2xl md:text-3xl font-bold mb-10 leading-relaxed text-slate-800 lg:text-center">
+                    Please feel free to contact us for further information if you want to evaluate viable renewable energy opportunities in the Southeastern Europe.
+                </h1>
+                
+                <div class="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 flex flex-col sm:flex-row items-center sm:items-start gap-8 border border-slate-100 transition-transform hover:-translate-y-1 duration-500 w-full">
+                    
+                    <div class="w-28 h-28 md:w-32 md:h-32 shrink-0 rounded-full overflow-hidden shadow-md border-4 border-white">
+                        <img 
+                            src="assets/photo.jpg" 
+                            alt="Johan Elisson" 
+                            class="w-full h-full object-cover select-none pointer-events-none"
+                            draggable="false"
+                            oncontextmenu="return false;"
+                        />
+                    </div>
+
+                    <div class="flex flex-col items-center sm:items-start text-center sm:text-left mt-2">
+                        <h2 class="font-display text-2xl font-bold mb-1">Johan Elisson</h2>
+                        <p class="text-[#10B981] font-bold uppercase tracking-widest text-xs mb-5">
+                            Founder & General Manager
+                        </p>
+                        
+                        <p class="text-slate-600 font-light text-sm mb-6 leading-relaxed">
+                            <span class="font-medium text-slate-800">Galison Global Ltd.</span><br>
+                            Varna, Bulgaria
+                        </p>
+                          
+                        <a href="mailto:johan.elisson@galison-global.com" class="inline-flex items-center gap-3 text-slate-600 hover:text-[#10B981] transition-colors group">
+                            <div class="w-10 h-10 shrink-0 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-[#10B981]/10 transition-colors border border-slate-100">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <span class="font-medium text-sm md:text-base underline decoration-slate-200 underline-offset-8 group-hover:decoration-[#10B981]">
+                                johan.elisson@galison-global.com
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="shrink-0 border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-24 py-10">
+            <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <div class="font-display font-bold text-lg tracking-tight text-slate-900">Galison Global Ltd.</div>
+                    <div class="mt-2 text-sm text-slate-600 font-light">
+                        <a href="mailto:johan.elisson@galison-global.com" class="hover:text-[#10B981] transition-colors underline decoration-slate-200 underline-offset-4 hover:decoration-[#10B981]">
+                            johan.elisson@galison-global.com
+                        </a>
+                        <span class="text-slate-300 px-2" aria-hidden="true">|</span>
+                        Varna, Bulgaria
+                    </div>
+                </div>
+
+                <nav class="flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium uppercase tracking-widest text-slate-600">
+                    <a href="index.html" class="hover:text-[#10B981] transition-colors">About</a>
+                    <a href="services.html" class="hover:text-[#10B981] transition-colors">Services</a>
+                    <a href="projects.html" class="hover:text-[#10B981] transition-colors">Projects</a>
+                    <a href="contact.html" class="hover:text-[#10B981] transition-colors">Contact</a>
+                </nav>
+            </div>
+
+            <div class="mt-8 text-xs text-slate-400 font-light">
+                © <span id="year"></span> Galison Global Ltd. All rights reserved.
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+</html>
