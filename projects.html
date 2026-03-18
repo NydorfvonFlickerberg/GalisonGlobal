@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=IBM+Plex+Sans:wght@400;500;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -17,7 +17,8 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        display: ['Syne', 'sans-serif'],
+                        display: ['IBM Plex Sans', 'sans-serif'],
+                        brand: ['Syne', 'sans-serif'],
                     }
                 }
             }
@@ -29,7 +30,7 @@
     <header class="w-full z-50 px-6 py-6 md:px-24 flex flex-col md:flex-row justify-between items-center bg-white border-b border-slate-200 text-slate-900 shadow-sm">
         
         <div class="mb-6 md:mb-0 text-center md:text-left">
-            <div class="font-display font-bold text-2xl tracking-tight text-slate-900">Galison Global Ltd.</div>
+            <div class="font-brand font-bold text-[26px] tracking-tight text-slate-900">Galison Global Ltd.</div>
             <div class="text-[10px] md:text-xs text-slate-500 font-light mt-1 tracking-wider uppercase max-w-xs md:max-w-none">
                 a Bulgarian private company with Swedish management, since 2013.
             </div>
@@ -51,7 +52,7 @@
             alt="Renewable Energy Background" 
         />
         <div class="relative z-10 max-w-4xl pt-16">
-            <h1 class="font-display text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+            <h1 class="font-display text-5xl md:text-6xl font-semibold text-white mb-4 tracking-tight">
                 Our Projects
             </h1>
         </div>
@@ -69,7 +70,7 @@
                     />
                 </div>
                 <div>
-                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Energy Storage Sales Management</h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-semibold mb-6">Energy Storage Sales Management</h2>
                     <p class="text-slate-600 text-lg font-light leading-relaxed">
                         In close collaboration with one of the world's leading energy storage manufacturers, we have being actively involved in the sales cycle, from prospecting and lead qualification to proposal preparation.
                     </p>
@@ -82,7 +83,7 @@
                         <span class="w-2 h-2 rounded-full bg-amber-500"></span>
                         In progress
                     </div>
-                    <h2 class="font-display text-3xl md:text-4xl font-bold">
+                    <h2 class="font-display text-3xl md:text-4xl font-semibold">
                         Utility-Scale PV and BESS Development
                     </h2>
                     <p class="text-slate-600 text-lg font-light leading-relaxed">
@@ -90,13 +91,13 @@
                     </p>
                     <div class="grid sm:grid-cols-2 gap-8 pt-4">
                         <div>
-                            <div class="text-4xl md:text-5xl font-display font-bold mb-2">400+ MW</div>
+                            <div class="text-4xl md:text-5xl font-display font-semibold mb-2">400+ MW</div>
                             <p class="text-slate-500 font-light leading-relaxed text-sm md:text-base">
                                 (megawatt) range - Large-scale PV and BESS projects are identified and secured for international investors.
                             </p>
                         </div>
                         <div>
-                            <div class="text-4xl md:text-5xl font-display font-bold text-[#10B981] mb-2">2026–2028</div>
+                            <div class="text-4xl md:text-5xl font-display font-semibold text-[#10B981] mb-2">2026–2028</div>
                             <p class="text-slate-500 font-light leading-relaxed text-sm md:text-base">
                                 Expected to be fully operational.
                             </p>
