@@ -39,7 +39,7 @@
             <a href="index.html" class="hover:text-[#10B981] transition-colors">Home</a>
             <a href="services.html" class="hover:text-[#10B981] transition-colors">Services</a>
             <a href="projects.html" class="hover:text-[#10B981] transition-colors">Projects</a>
-            <a href="contact.html" class="text-[#10B981] transition-colors">Contact</a>
+            <a href="contact.html" class="hover:text-[#10B981] transition-colors">Contact</a>
         </nav>
         
     </header>
@@ -129,6 +129,22 @@
 
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();
+
+            (function highlightActiveNav() {
+                const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+                const headerNav = document.querySelector('header nav');
+                if (!headerNav) return;
+
+                headerNav.querySelectorAll('a[href]').forEach((a) => {
+                    a.classList.remove('text-[#10B981]');
+                    const href = (a.getAttribute('href') || '').split('#')[0].toLowerCase();
+                    if (!href) return;
+                    const isHome = current === '' || current === '/' || current === 'index.html';
+                    if ((isHome && href.endsWith('index.html')) || href.endsWith(current)) {
+                        a.classList.add('text-[#10B981]');
+                    }
+                });
+            })();
         </script>
     </footer>
 
